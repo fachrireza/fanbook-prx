@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <title>PaperRex FanBook Site</title>
+    <link rel="icon"
+        href="data:image/png;base64,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">
+    <style>
+        * {
+            font-family: 'Merriweather', serif;
+        }
+
+        .cover {
+            width: 100%;
+            height: 300px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.thespike.gg/Kei%2F52932604247_5313fb15df_c_1685339780936.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .postbox {
+            width: 95%;
+            max-width: 500px;
+            padding: 20px;
+            margin: 20px auto 0px auto;
+            box-shadow: 0px 0px 3px 0px gray;
+            height: 290px;
+        }
+
+        .mybtns {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .mycard {
+            width: 95%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .mycard>.card {
+            margin: 10px;
+        }
+
+        .card-text>img {
+            height: 12px;
+            width: 13px;
+            margin-right: 2px;
+            box-shadow: 0px 0px 2px 0px black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .blockquote>p {
+            font-size: 16px;
+        }
+
+        .blockquote-footer {
+            font-size: 14px;
+        }
+
+        .rostercard {
+            margin: 20px auto 0px auto;
+            width: 95%;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <h1>Paper Rex FanBook</h1>
+        <h3 style="color: gray;">#wgaming</h3>
+
+    </div>
+
+    <div class="container">
+        <div class="postbox">
+            <p>Write your support here! </p>
+            <div class="mypost">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="enter a movie url">
+                    <label for="floatingInput">Nick Name</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Fan Message</label>
+                </div>
+                <div class="mybtns">
+                    <button type="button" class="btn btn-dark">Leave Fan Message</button>
+                </div>
+            </div>
+        </div>
+        <div class="mycard">
+            <p style="padding-left: 10px; margin-bottom: 2px; padding-top: 15px;">Comments :</p>
+            <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>I always enjoy your match! #wgaming</p>
+                        <footer class="blockquote-footer">DbangkongS</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>What a crazy peformance, I hope I can Be like you guys!</p>
+                        <footer class="blockquote-footer">Riodjadja</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Please bring back papa Benkai into the line up!</p>
+                        <footer class="blockquote-footer">Spicyu</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rostercard">
+        <h3>PRX Roster's</h3>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS93gebFOmcljFvsAtBHAsEMkm3jTywEqVAw2KuTytNq_vP3y8CgouOm-CjujTIWa764t4&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">mindfreak</h5>
+                        <p class="card-text"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACqCAMAAABVlWm8AAAABlBMVEX/AAD///9BHTQRAAAAhElEQVR4nO3PMQEAAAjAIO1f2hRegwbMAAAAAAAAAAAAAAAAAAAAAAAAAAAAPNk2/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv+2A+BhVKwOtdkDAAAAAElFTkSuQmCC">Aaron
+                            Leonhart.</p>
+                        <p class="mycomment">Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkuwrHuhh1OvQ5Qc58oGIJFHSYWLhYJGu8xw&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jinggg
+                        </h5>
+                        <p class="card-text"><img
+                                src="data:image/png;base64,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">Wang
+                            jing Jie</p>
+                        <p class="mycomment">Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkejhPMoNP8vU0My41ECD-aZxhrkZlvSyUZEycGYwrZvze5hHYxV5CFOLAqJUT2UmB0tU&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">fOrsakeN</h5>
+                        <p class="card-text">
+                        <p class="card-text"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACqCAMAAABVlWm8AAAABlBMVEX/AAD///9BHTQRAAAAhElEQVR4nO3PMQEAAAjAIO1f2hRegwbMAAAAAAAAAAAAAAAAAAAAAAAAAAAAPNk2/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv+2A+BhVKwOtdkDAAAAAElFTkSuQmCC">Jason
+                            Susanto</p>
+                        <p class="mycomment">Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_LsCVSYekbaYwAKtYgwCQxV3v0N6v53h1s6fQ-vndshDadCMTpwKrt2xCyBeA_tkoIc&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">d4v4i</h5>
+                        <p class="card-text"><img
+                                src="data:image/png;base64,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"
+                                alt="">Khalish Rusyaidee</p>
+                        <p class="mycomment">Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqLhbZoq3KJjfvCmFCCH1SvkzR1s0kyvsKcZPC6noXOcVtA0ZoNx58vi3jloUrxw3uGXg&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">something</h5>
+                        <p class="card-text"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAGFBMVEX////VKx4AOab2+f0AN6UEOaPOKxwFPKiWjACKAAAA+UlEQVR4nO3QsQGDAAzAsFCg/P8xezyxSydoBgAAAAAAAAAAAAAAAAAAAOCjk20etrnY5sfmpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aTmZps/2xxsTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTmpFw4O1+wE1Ff8AAAAAElFTkSuQmCC"
+                                alt="">Ilya Petrov</p>
+                        <p class="mycomment">Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_QlmsQEqtN44yCVQjqEL9G8B5XGOEkAcAqLx_Vs3JT5D4PsQaKXtkb41OPtu3y7HHfEM&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">cgrs</h5>
+                        <p class="card-text"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAGFBMVEUtKkqlGTH09fiiACHPoaj3+/3///8AADP2wT/MAAABGElEQVR4nO3csQ3CABAEwTe2of+OyX8lUhPMVHDaAm4Otnl6wB/SpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTWpOtrnY5mabF5smpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUvNmmw/bAAAAAAAAAAAAAAAAAAAAAL89fQ7wh/xalP+T0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1qbra52OZkm4NNk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClN6guCHexVxL7UcwAAAABJRU5ErkJggg=="
+                                alt="">Patiphan Porsi</p>
+                        <p class="mycomment">Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLUdCojax6cTvisbJBJIY4qDHNWeMPM0DuZH4u309WlqCfnzN-Y1RbcoBSgtOFqEbh1E&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Benkai</h5>
+                        <p class="card-text"><img
+                                src="data:image/png;base64,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">Bennedict
+                            Tan</p>
+                        <p class="mycomment">Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVm261SrbGjojwp4Xz5tgb4sKObs_dWzv3G6estpA2RJJ2xYCdm7QhQJ4bWD7bLrCoNN8&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">alecks</h5>
+                        <p class="card-text"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8iIF/tICQRDlmJiaLxbG7tFBknZh2aAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII="
+                                alt="">Alex Salle</p>
+                        <p class="mycomment">Coach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
